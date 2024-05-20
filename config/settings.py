@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'taggit_templatetags2',
     'photo',
     'widget_tweaks',
+    'rest_framework',
+    'my_page',
 ]
 
 MIDDLEWARE = [
@@ -156,3 +158,12 @@ DISQUS_MY_DOMAIN = 'http://127.0.0.1:8000'
 LOGIN_REDIRECT_URL='/'
 # LOGIN_URL
 LOGOUT_REDIRECT_URL='/'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',  # 인증된 사용자만 접근 허용
+    ],
+}

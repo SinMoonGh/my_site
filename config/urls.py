@@ -32,4 +32,5 @@ urlpatterns = [
     path('accounts/register/',UserCreateView.as_view(), name='register'),
     path('accounts/register/done/',UserCreateDoneTV.as_view(), name='register_done'),
     # path('logout/', auth_views.LoginView.as_view(next_page='home'), name='logout'), # 추가
+    path('my_page/', include('my_page.urls')),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

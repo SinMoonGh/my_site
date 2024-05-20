@@ -1,0 +1,19 @@
+asgiref==3.8.1
+beautifulsoup4==4.12.3
+Django==5.0.3
+django-bootstrap4==24.3
+django-classy-tags==4.1.0
+django-debug-toolbar==4.3.0
+django-polls @ file:///C:/Users/gnsdl/workspace_dj/django-polls/dist/django-polls-0.1.tar.gz#sha256=17adf6f701bb44433f5885bd10b6a65474cca93d8fcb9d4a3ff4be3e780983cd
+django-taggit==5.0.1
+django-taggit-templatetags2==1.6.1
+django-widget-tweaks==1.5.0
+djangorestframework==3.15.1
+pillow==10.3.0
+psycopg==3.1.18
+psycopg-binary==3.1.18
+pytz==2024.1
+soupsieve==2.5
+sqlparse==0.4.4
+typing_extensions==4.10.0
+tzdata==2024.1
